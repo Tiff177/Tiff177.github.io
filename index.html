@@ -3,63 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Tiffany's student portfolio: accountancy, work experience, skills, interests, and hobbies.">
+  <meta name="description" content="Tiffany's student portfolio: accountancy studies, work experience, skills, and interests.">
   <title>Tiffany | Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
     <nav class="site-nav" aria-label="Main navigation">
-      <a class="brand" href="#welcome">Tiffany</a>
-      <div class="nav-links">
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#interests">Interests</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a class="brand" href="#welcome">Tiffany<span aria-hidden="true">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="page-section section-white welcome" id="welcome" aria-labelledby="welcome-title">
-      <div class="section-inner welcome-content">
-        <p class="eyebrow">Student portfolio</p>
+  <main id="main-content">
+    <section class="welcome section" id="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-inner">
+        <p class="eyebrow">Student · Learner · Curious mind</p>
         <h1 id="welcome-title">Hello, I’m Tiffany.</h1>
         <p class="welcome-copy">Welcome! I am a student who enjoys building practical skills, communication skills and problem-solving skills.</p>
-        <a class="text-link" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
+        <a class="text-link welcome-link" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
       </div>
+      <div class="welcome-mark" aria-hidden="true">T</div>
     </section>
 
-    <section class="page-section section-blue" id="about" aria-labelledby="about-title">
+    <section class="section section--white" id="about" aria-labelledby="about-title">
       <div class="section-inner">
+        <p class="eyebrow">A little introduction</p>
         <h2 id="about-title">About Me</h2>
-        <div class="card about-card">
-          <p>I am currently a third-year student majoring in Professional Accountancy at Hang Seng University of Hong Kong,</p>
-          <p>I began learning and exploring accounting in Secondary 3.</p>
-          <p>This website is a small project where I practise web design and share what I am learning.</p>
+        <div class="card-grid card-grid--about">
+          <article class="card">
+            <span class="card-number" aria-hidden="true">01</span>
+            <p>I am currently a third-year student majoring in Professional Accountancy at Hang Seng University of Hong Kong,</p>
+          </article>
+          <article class="card">
+            <span class="card-number" aria-hidden="true">02</span>
+            <p>I began learning and exploring accounting in Secondary 3,</p>
+          </article>
+          <article class="card">
+            <span class="card-number" aria-hidden="true">03</span>
+            <p>This website is a small project where I practise web design and share what I am learning.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-white" id="experience" aria-labelledby="experience-title">
+    <section class="section section--blue" id="experience" aria-labelledby="experience-title">
       <div class="section-inner">
+        <p class="eyebrow">Learning by doing</p>
         <h2 id="experience-title">Experience</h2>
         <article class="card experience-card">
-          <p>I started working part-time in 2024 (after completing my DSE). Over the past two years, I have tried different types of jobs, including: food and beverage (fast-food restaurant, ramen shop), sales, promotion, and ticket distribution (travel agency).</p>
-          <p>Even during the school term, I would work part-time whenever I had no classes (such as Saturdays and Sundays).</p>
-          <p>There are two main reasons I have kept working part-time. First, I hope to gain personal work experience by trying different occupations, learn various skills (e.g. communication skills, problem-solving skills, collaboration skills), and strengthen my personal abilities (e.g. stress tolerance, adaptability, time management).</p>
-          <p>Second, it allows me to be more independent. Although my income may not be much, I no longer need to ask my parents for money. Moreover, buying things I like with money I have earned myself gives me a great sense of achievement.</p>
-          <p>In addition, regular part-time work provides a relatively stable income, helping me increase my savings and develop good saving habits.</p>
+          <p>I started working part-time in 2024 (after completing my DSE). Over the past two years, I have tried different types of jobs, including: food and beverage (fast-food restaurant, ramen shop), sales, promotion, and ticket distribution (travel agency). Even during the school term, I would work part-time whenever I had no classes (such as Saturdays and Sundays).</p>
+          <p>There are two main reasons I have kept working part-time. First, I hope to gain personal work experience by trying different occupations, learn various skills (e.g. communication skills, problem-solving skills, collaboration skills), and strengthen my personal abilities (e.g. stress tolerance, adaptability, time management). Second, it allows me to be more independent. Although my income may not be much, I no longer need to ask my parents for money. Moreover, buying things I like with money I have earned myself gives me a great sense of achievement. In addition, regular part-time work provides a relatively stable income, helping me increase my savings and develop good saving habits.</p>
         </article>
       </div>
     </section>
 
-    <section class="page-section section-blue" id="skills" aria-labelledby="skills-title">
+    <section class="section section--white" id="skills" aria-labelledby="skills-title">
       <div class="section-inner">
+        <p class="eyebrow">Things I can do</p>
         <h2 id="skills-title">Skills</h2>
         <div class="card-grid">
           <article class="card">
@@ -78,8 +88,9 @@
       </div>
     </section>
 
-    <section class="page-section section-white" id="interests" aria-labelledby="interests-title">
+    <section class="section section--blue" id="interests" aria-labelledby="interests-title">
       <div class="section-inner">
+        <p class="eyebrow">What I enjoy</p>
         <h2 id="interests-title">Interests</h2>
         <div class="card-grid">
           <article class="card">
@@ -98,45 +109,40 @@
       </div>
     </section>
 
-    <section class="page-section section-blue" id="hobbies" aria-labelledby="hobbies-title">
+    <section class="section section--white" id="hobbies" aria-labelledby="hobbies-title">
       <div class="section-inner">
+        <p class="eyebrow">Off the clock</p>
         <h2 id="hobbies-title">Hobbies</h2>
-        <div class="hobby-layout">
-          <div class="hobby-cards">
-            <article class="card">
-              <h3>Volleyball</h3>
-              <p>participated in the school volleyball team and inter-school volleyball competitions for eight years</p>
-            </article>
-            <article class="card">
-              <h3>Baking</h3>
-              <p>cupcakes, mochi desserts, Chinese sweet soup (Tong sui)</p>
-            </article>
-            <article class="card">
-              <h3>Handicrafts</h3>
-              <p>knitting (scarves), crochet (small bags, dolls), cross-stitch</p>
-            </article>
-          </div>
-          <div class="hobby-gallery" aria-label="Baking photos">
-            <img src="Image/image%201.jpg" alt="Homemade mochi arranged on a tray">
-            <img src="Image/image%202.jpg" alt="A homemade drink and sweet treats">
-          </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Volleyball</h3>
+            <p>participated in the school volleyball team and inter-school volleyball competitions for eight years</p>
+          </article>
+          <article class="card">
+            <h3>Baking</h3>
+            <p>cupcakes, mochi desserts, Chinese sweet soup (Tong sui)</p>
+          </article>
+          <article class="card">
+            <h3>Handicrafts</h3>
+            <p>knitting (scarves), crochet (small bags, dolls), cross-stitch</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-white contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="section-inner">
+    <section class="section section--blue contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-inner">
+        <p class="eyebrow">Let’s connect</p>
         <h2 id="contact-title">Contact</h2>
-        <div class="card contact-card">
-          <p>I’d be happy to hear from you.</p>
-          <a class="text-link" href="mailto:s265759@hsu.edu.hk">s265759@hsu.edu.hk</a>
-        </div>
+        <p>I’d be happy to hear from you.</p>
+        <a class="text-link contact-link" href="mailto:s265759@hsu.edu.hk">s265759@hsu.edu.hk</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>Made with care by Tiffany · <a href="#welcome">Back to top ↑</a></p>
+    <p>Made with care by Tiffany <span aria-hidden="true">·</span> Student portfolio</p>
+    <a href="#welcome">Back to top ↑</a>
   </footer>
 </body>
 </html>
